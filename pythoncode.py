@@ -1,5 +1,5 @@
 # Install the required packages
-pip install streamlit pyngrok pypdf2
+pip install pypdf2
 
 # Write the Streamlit app to a file
 %%writefile streamlit_app.py
