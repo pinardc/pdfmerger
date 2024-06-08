@@ -64,9 +64,4 @@ if st.button("Merge PDFs"):
 # Run Streamlit App
 !streamlit run /content/streamlit_app.py &>/content/logs.txt &
 
-!ngrok authtoken 2YOqT1CQR60HcfB8f8DNnW7EEnr_6u5hh1kfsFbzFKU9ntFyY
 
-# Expose port 8501
-# Select the URL below and click through when prompted.
-print("When prompted use the following IP Address")
-!npx localtunnel --port 8501 & curl ipv4.icanhazip.com
