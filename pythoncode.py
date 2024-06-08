@@ -1,11 +1,3 @@
-gspread==5.1.1
-streamlit==1.4.0
-docx2txt==0.8
-df2gspread==1.0.4
-pandas==1.2.5
-PyPDF2==1.26.0
-
-
 import streamlit as st
 from PyPDF2 import PdfMerger
 import io
