@@ -20,7 +20,7 @@ logo_path = "Ani.ML_C_hrzHealth.png"  # Update this path if the logo is in a dif
 st.image(logo_path, width=400)
 
 # Title
-st.title("ANI.ML Health Inc. PDF Merger")
+st.title("PDF Merger Utility")
 
 
 # File uploader
