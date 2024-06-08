@@ -13,36 +13,15 @@ def merge_pdfs(pdf_list):
     merged_pdf.seek(0)
     return merged_pdf
 
-# Function to add a logo
-def add_logo():
-    st.markdown(
-        """
-        <style>
-            .logo-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 10px 0;
-            }
-            .logo-container img {
-                max-width: 150px;  # Adjust the max-width to make the logo smaller
-                height: auto;
-            }
-        </style>
-        <div class="logo-container">
-            <img src="Ani.ML_C_hrzHealth.png" alt="Logo">
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-
-
 # Streamlit interface
-st.title("ANI.ML Health Inc. PDF Merger")
 
 # Add the logo to the app
-add_logo()
+logo_path = "Ani.ML_C_hrzHealth.png"  # Update this path if the logo is in a different directory
+st.image(logo_path, width=150)
+
+# Title
+st.title("ANI.ML Health Inc. PDF Merger")
+
 
 # File uploader
 uploaded_files = st.file_uploader("Upload PDF files", accept_multiple_files=True, type='pdf')
