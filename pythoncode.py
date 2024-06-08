@@ -25,15 +25,14 @@ def add_logo():
                 padding: 10px 0;
             }
             .logo-container img {
-                max-width: 100%;
+                max-width: 150px;  # Adjust the max-width to make the logo smaller
                 height: auto;
             }
         </style>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
+        </div>
         """,
-        unsafe_allow_html=True,
-    )
-    st.markdown(
-        '<div class="logo-container"><img src=Ani.ML_C_hrzHealth.png" alt="Logo"></div>',
         unsafe_allow_html=True,
     )
 
@@ -42,7 +41,6 @@ add_logo()
 
 # Streamlit interface
 st.title("ANI.ML Health Inc. PDF Merger")
-
 
 
 # File uploader
