@@ -13,32 +13,35 @@ def merge_pdfs(pdf_list):
     merged_pdf.seek(0)
     return merged_pdf
 
-# Streamlit interface
-st.title("ANI.ML Health Inc. PDF Merger")
-
+# Function to add a logo
 def add_logo():
     st.markdown(
         """
         <style>
-            [data-testid="stSidebarNav"] {
-                background-image: /content/Untitled.jpg;
-                background-repeat: no-repeat;
-                padding-top: 120px;
-                background-position: 20px 20px;
+            .logo-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0;
             }
-            [data-testid="stSidebarNav"]::before {
-                content: "My Company Name";
-                margin-left: 20px;
-                margin-top: 20px;
-                font-size: 30px;
-                position: relative;
-                top: 100px;
+            .logo-container img {
+                max-width: 100%;
+                height: auto;
             }
         </style>
         """,
         unsafe_allow_html=True,
     )
+    st.markdown(
+        '<div class="logo-container"><img src="https://framerusercontent.com/assets/dXBFxFEJVllgled4vx8Baz2sVI.png" alt="Logo"></div>',
+        unsafe_allow_html=True,
+    )
 
+# Streamlit interface
+st.title("ANI.ML Health Inc. PDF Merger")
+
+# Add the logo to the app
+add_logo()
 
 # File uploader
 uploaded_files = st.file_uploader("Upload PDF files", accept_multiple_files=True, type='pdf')
@@ -55,6 +58,3 @@ if st.button("Merge PDFs"):
                            mime="application/pdf")
     else:
         st.error("Please upload some PDF files to merge")
-
-
-
