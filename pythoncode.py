@@ -1,7 +1,4 @@
 
-
-# Write the Streamlit app to a file
-%%writefile streamlit_app.py
 import streamlit as st
 from PyPDF2 import PdfMerger
 import io
