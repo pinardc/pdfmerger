@@ -17,17 +17,7 @@ def merge_pdfs(pdf_list):
 
 # Add the logo to the app
 logo_path = "Ani.ML_C_hrzHealth.png"  # Update this path if the logo is in a different directory
-st.image(logo_path, width=150)
-
-# Center and resize the logo using Markdown and HTML
-st.markdown(
-    f"""
-    <div style="display: flex; justify-content: center; align-items: center; padding: 10px 0;">
-        <img src="{logo_path}" style="max-width: 200px; height: auto;">
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+st.image(logo_path, width=200)
 
 # Title
 st.title("ANI.ML Health Inc. PDF Merger")
