@@ -33,7 +33,7 @@ def add_logo():
         unsafe_allow_html=True,
     )
     st.markdown(
-        '<div class="logo-container"><img src="https://framerusercontent.com/assets/dXBFxFEJVllgled4vx8Baz2sVI.png" alt="Logo"></div>',
+        '<div class="logo-container"><img src=Ani.ML_C_hrzHealth.png" alt="Logo"></div>',
         unsafe_allow_html=True,
     )
 
