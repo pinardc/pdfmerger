@@ -17,7 +17,7 @@ def merge_pdfs(pdf_list):
 
 # Add the logo to the app
 logo_path = "Ani.ML_C_hrzHealth.png"  # Update this path if the logo is in a different directory
-st.image(logo_path, width=200)
+st.image(logo_path, width=400)
 
 # Title
 st.title("ANI.ML Health Inc. PDF Merger")
