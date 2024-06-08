@@ -57,7 +57,5 @@ if st.button("Merge PDFs"):
     else:
         st.error("Please upload some PDF files to merge")
 
-# Run Streamlit App
-!streamlit run /content/streamlit_app.py &>/content/logs.txt &
 
 
