@@ -30,7 +30,7 @@ def add_logo():
             }
         </style>
         <div class="logo-container">
-            <img src="logo.png" alt="Logo">
+            <img src="Ani.ML_C_hrzHealth.png" alt="Logo">
         </div>
         """,
         unsafe_allow_html=True,
