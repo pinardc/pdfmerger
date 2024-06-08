@@ -37,11 +37,13 @@ def add_logo():
         unsafe_allow_html=True,
     )
 
+# Add the logo to the app
+add_logo()
+
 # Streamlit interface
 st.title("ANI.ML Health Inc. PDF Merger")
 
-# Add the logo to the app
-add_logo()
+
 
 # File uploader
 uploaded_files = st.file_uploader("Upload PDF files", accept_multiple_files=True, type='pdf')
