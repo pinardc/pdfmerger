@@ -2,7 +2,7 @@
 
 Website Link: https://animl-pdfmerger.streamlit.app
 
-This application was built for the purpose of merging PDFs for each of use. 
+This application was built to merge multiple PDF documents for clinical review. 
 
 Email us for any questions:
 we.care@animl.health 
