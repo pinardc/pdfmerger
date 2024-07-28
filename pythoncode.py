@@ -16,7 +16,7 @@ def merge_pdfs(pdf_list):
 # Streamlit interface
 
 # Add the logo to the app
-logo_path = "Ani.ML_C_hrzHealth.png"  # Update this path if the logo is in a different directory
+logo_path = "ANI.ML Research Logo.png"  # Update this path if the logo is in a different directory
 st.image(logo_path, width=400)
 
 # Title
